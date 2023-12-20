@@ -6,7 +6,6 @@ public class RomanNumber {
         stringValue = value;
         intValue = Parse(value);
     }
-
     private int Parse(String s) {
         if (s.startsWith("M")) return 1000 + Parse(s.substring(1));
         if (s.startsWith("CM")) return 900 + Parse(s.substring(2));
